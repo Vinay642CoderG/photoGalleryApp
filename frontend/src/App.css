@@ -26,7 +26,7 @@
   margin-top: 7rem;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -40,11 +40,25 @@
 }
 #model .close-btn{
   font-size: 4rem;
-  font-weight: 100;
   position: absolute;
   right: 0;
+  border: none;
 }
 #model .close-btn:focus{
+  outline: none;
+  border: none;
+}
+#model .left-arrow-btn,
+#model .right-arrow-btn
+{
+  font-size: 4rem;
+  border: none;
+  
+}
+
+#model .left-arrow-btn:focus,
+#model .right-arrow-btn:focus
+{
   outline: none;
   border: none;
 }
@@ -133,6 +147,12 @@
   #model .close-btn{
     font-size: 3rem;
   }
+  #model .left-arrow-btn,
+#model .right-arrow-btn
+{
+  font-size: 3rem;
+  border: none;
+}
 }
 #prevButton {
   color: #fff;
